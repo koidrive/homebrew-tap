@@ -1,26 +1,26 @@
 class Koidrive < Formula
   desc "File sync you deploy to your own Cloudflare account"
   homepage "https://koidrive.com"
-  version "0.1.0-alpha.3"
+  version "0.1.0-alpha.4"
   license all_of: ["Apache-2.0", "AGPL-3.0-or-later"]
 
   on_macos do
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.3/koidrive-aarch64-apple-darwin.tar.gz"
-      sha256 "3fcd5e62e76d20afa3f48b5e8d223c8557b8af8fdd60ce454ae279647437ea18"
+      url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.4/koidrive-aarch64-apple-darwin.tar.gz"
+      sha256 "4de5915829b62ff52d39a44855f59870389b16a4f50411e77d1f85033beeb871"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.3/koidrive-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "52c55932091231a6a03e85039f79704ef37ccf43245d1e4789a7f136672164f7"
+      url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.4/koidrive-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "f290d8397d1a9d980749c5251c8ddb4af1c69800957cbb49c55025db7241f812"
     end
     on_intel do
-      url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.3/koidrive-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f8a44548fb7efe7bcbf9afadf010bffb6335b67e77f4beb1ee8b690f38c91424"
+      url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.4/koidrive-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "6ebb7ac7541ffcbbeb384780b9b0de878379422732ea5777331e03f208daf5c3"
     end
   end
 
