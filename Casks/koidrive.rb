@@ -1,12 +1,13 @@
 cask "koidrive" do
-  version "0.1.0-alpha.5"
-  sha256 "949576c8194bf3570fc701084fe03d8acf5acf9b17892022453c00543ae87e0a"
+  version "0.1.0-alpha.6"
+  sha256 "f3d1c589ad7abfd7d13d4cc7cd7a7d419b9c4fb08ec4f5cbc828496029cf396c"
 
-  url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.5/Koidrive-#{version}-arm64.dmg"
+  url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.6/Koidrive-#{version}-arm64.dmg"
   name "Koidrive"
   desc "File sync you deploy to your own Cloudflare account"
   homepage "https://koidrive.com/"
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
@@ -26,7 +27,7 @@ cask "koidrive" do
       ]
 
   caveats <<~EOS
-    For full removal of the app, its login item and preferences, run:
-      brew uninstall --zap --cask koidrive
+    To remove Koidrive with its background service, settings and sync state, run:
+      koi uninstall
   EOS
 end
