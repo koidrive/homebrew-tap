@@ -1,8 +1,8 @@
 cask "koidrive" do
-  version "0.1.0-alpha.6"
-  sha256 "f3d1c589ad7abfd7d13d4cc7cd7a7d419b9c4fb08ec4f5cbc828496029cf396c"
+  version "0.1.0-alpha.7"
+  sha256 "ee93f3c7389faf5236e2f7cfff6af5122542391a3e5b57891c4de3cc35ced256"
 
-  url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.6/Koidrive-#{version}-arm64.dmg"
+  url "https://github.com/koidrive/koidrive/releases/download/v0.1.0-alpha.7/Koidrive-#{version}-arm64.dmg"
   name "Koidrive"
   desc "File sync you deploy to your own Cloudflare account"
   homepage "https://koidrive.com/"
